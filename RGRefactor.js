@@ -1,3 +1,3 @@
-export default ({ name }) => {
+export function getName({ name }) {
   return name;
-};
+}
