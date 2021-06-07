@@ -1,5 +1,5 @@
 export default (obj) => {
-  const name = obj.name;
+  const name = obj['name'];
 
   return name;
 };
