@@ -1,6 +1,6 @@
 import {
   getName,
-
+  copyAndPush
 } from './RGRefactor.js';
 
 describe('getName', () => {
@@ -22,13 +22,7 @@ describe('Copy and Push Function', () => {
   const numbers = [1, 2, 3];
 
   test('numbers plus 4', () => {
-
     expect(copyAndPush(numbers, 4)).toEqual([1, 2, 3, 4]);
-  });
-
-  test('numbers plus 32', () => {
-
-    expect(copyAndPush(numbers, 32)).toEqual([1, 2, 3, 32]);
   });
 
 });
