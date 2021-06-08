@@ -1,7 +1,8 @@
 import {
   getName,
   copyAndPush,
-  capFilterF
+  capFilterF,
+  fetchQuotes
 } from './RGRefactor.js';
 
 describe('getName', () => {
@@ -38,6 +39,14 @@ describe('Capitalize and Filter', () => {
 
   test('capitalized and not including frog from Florida', () => {
     expect(capFilterF(stringArr)).toEqual(['A', 'ATE', 'A', 'RADIOACTIVE']);
+  });
+
+});
+
+describe('fetch quotes', () => {
+
+  test('fetches a random quote from Futurama API', () => {
+    expect(fetchQuotes()).toEqual(expect.any(String));
   });
 
 });

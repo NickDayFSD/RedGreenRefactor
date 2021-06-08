@@ -9,7 +9,11 @@ export function copyAndPush(numArr, num) {
 
 export function capFilterF(stringArr) {
   const newArr = [];
-  
+
   stringArr.forEach(string => newArr.push(string.toUpperCase()));
   return newArr.filter(letter => letter[0] !== 'F');
+}
+
+export function fetchQuotes() {
+  
 }
