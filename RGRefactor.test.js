@@ -25,4 +25,8 @@ describe('Copy and Push Function', () => {
     expect(copyAndPush(numbers, 4)).toEqual([1, 2, 3, 4]);
   });
 
+  test('makes sure numbers is unchanged', () => {
+    expect(numbers).toEqual([1, 2, 3]);
+  });
+
 });
