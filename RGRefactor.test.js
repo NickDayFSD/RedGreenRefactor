@@ -1,6 +1,7 @@
 import {
   getName,
-  copyAndPush
+  copyAndPush,
+  capFilterF
 } from './RGRefactor.js';
 
 describe('getName', () => {
@@ -27,6 +28,16 @@ describe('Copy and Push Function', () => {
 
   test('makes sure numbers is unchanged', () => {
     expect(numbers).toEqual([1, 2, 3]);
+  });
+
+});
+
+describe('Capitalize and Filter', () => {
+
+  const string = 'Once upon a time, a frog from Florida ate a radioactive fly.';
+
+  test('numbers plus 4', () => {
+    expect(capFilterF(string)).toEqual('Once Upon A Time, A rog rom lorida Ate A Radioactive ly.');
   });
 
 });
