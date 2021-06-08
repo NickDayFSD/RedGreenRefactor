@@ -45,8 +45,13 @@ describe('Capitalize and Filter', () => {
 
 describe('fetch quotes', () => {
 
-  test('fetches a random quote from Futurama API', () => {
-    expect(fetchQuotes()).toEqual(expect.any(String));
+  test('fetches a random quote from Futurama API', async () => {
+    
+    const quote = await fetchQuotes();
+
+    expect(quote.name).toEqual(expect.any(String));
+    expect(quote.text).toEqual(expect.any(String));
+    expect(quote.image).toEqual(expect.any(String));
   });
 
 });
