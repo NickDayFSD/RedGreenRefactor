@@ -3,6 +3,6 @@ export function getName({ name }) {
 }
 
 export function copyAndPush(numArr, num) {
-  numArr.push(num);
-  return numArr;
+  const newArr = [...numArr, num];
+  return newArr;
 }
