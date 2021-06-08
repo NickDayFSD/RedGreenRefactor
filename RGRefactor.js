@@ -7,6 +7,6 @@ export function copyAndPush(numArr, num) {
   return newArr;
 }
 
-export function capFilterF(string) {
+export function capFilterF(stringArr) {
 
 }

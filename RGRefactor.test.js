@@ -34,10 +34,10 @@ describe('Copy and Push Function', () => {
 
 describe('Capitalize and Filter', () => {
 
-  const string = 'Once upon a time, a frog from Florida ate a radioactive fly.';
+  const string = ['Once upon a time ', 'a frog from Florida ', 'ate a radioactive fly.'];
 
   test('numbers plus 4', () => {
-    expect(capFilterF(string)).toEqual('Once Upon A Time, A rog rom lorida Ate A Radioactive ly.');
+    expect(capFilterF(string)).toEqual(['Once Upon A Time ', 'A rog rom lorida ', 'Ate A Radioactive ly.']);
   });
 
 });
